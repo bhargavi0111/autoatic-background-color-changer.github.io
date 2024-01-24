@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+        h3{text-align:center;
+            /* margin-top:20%; */
+            position: relative;
+            top:12em;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="division"> -->
+        <h3 id="heading">Automatic color changer</h3>
+    <!-- </div> -->
+    <script>
+        // var divi=document.getElementById("#division")
+        var a=["#f90d0d","#7ff90dad","#0dd9f9ad","#f90db2ad","#f90b0dad","#e6f518ad"]
+
+        function getcolor(){
+        let randomindex=Math.floor(Math.random()*a.length)
+         b=a[randomindex]
+        document.body.style.backgroundColor=b
+    }
+       
+
+
+        setInterval(getcolor,1000)
+        // console.log(randomindex)
+        
+
+    </script>
+</body>
+</html>
